@@ -1,0 +1,101 @@
+age = int(input("enter your age:"))
+print("your age is:", age)
+
+
+
+
+
+num_1 = int(input("enter one number:"))
+num_2 = int(input("enter another number:"))
+
+result = (num_1 + num_2)/2
+print(result)
+
+
+
+
+
+width = int(input("enter the number of the width"))
+length = int(input("enter the number of the length"))
+
+area = width*length
+print("area is",area)
+
+
+
+
+
+num_1 = int(input("enter a number"))
+num_2 = int(input("enter another number"))
+
+result = num_1/num_2
+print(result)
+
+
+
+
+
+name = str(input("what is your name?"))
+fav_subject = str(input("what is your favourite subject "+name+"?"))
+
+print("I like", fav_subject , "as well")
+
+
+
+
+
+name = str(input("enter your name:"))
+
+if name == "bianca":
+  print("you are cool")
+else:
+  print("nice to meet you")
+
+
+
+
+
+watch_TV = int(input("Enter the amount of hours you watch TV daily:"))
+
+if watch_TV < 2:
+  print("that shouldn't rot your brain too much")
+elif watch_TV < 4 and watch_TV >= 2:
+  print("aren't yyou getting square eyes yet?")
+else:
+  print("fresh air beats channel flicking")
+
+
+
+
+
+mark_to_grade = int(input("enter the mark you got out of 100"))
+
+if mark_to_grade >= 75:
+  print("you have grade A")
+elif mark_to_grade >= 60 and mark_to_grade <75:
+  print("you have grade B")
+elif mark_to_grade >= 35 and mark_to_grade <60:
+  print("you have grade C")
+else:
+  print("You failed... you have grade D.")
+
+
+
+
+
+olympic_v = str(input("name one of the olympic values"))
+
+if olympic_v == "respect" or olympic_v == "excellence" or olympic_v == "freiendship":
+  print("that is correct")
+else:
+  print("No, that is incorrect.Try again.")
+
+
+
+
+
+
+
+
+
+
