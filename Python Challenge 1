@@ -95,6 +95,77 @@ else:
 
 
 
+print("-----ROCK,PAPER AND SCISSORS-----")
+
+import random
+
+computer = random.randint(1,3)
+user = int(input("enter your choice> 1 = rock// 2 = paper // 3 = scissors"))
+
+if computer == user:
+  print("draw")
+elif computer == 1 and user == 3:
+  print("I win")
+elif computer == 2 and user ==1:
+  print("I win")
+elif computer == 3 and user ==2:
+  print("I win")
+else:
+  print("you win")
+
+
+
+
+
+user = str(input("input a sentence:"))
+print("there are " ,len(user), " letters in the sentence.")
+
+
+
+
+
+
+user = str(input("input a sentence:"))
+print(user.upper())
+
+
+
+
+
+user = str(input("input a sentence"))
+word_1 = str(input("what word would you like to replace"))
+word_2 = str(input("what word do you want to replace it with"))
+ 
+print(user.replace( word_1, word_2))
+
+
+
+
+
+user = str(input("enter a sentence:"))
+print("'the' appears", user.count('the'), "times")
+
+  
+
+
+
+user = str(input("enter a sentence:"))
+print(user.lower())  
+  
+
+
+
+
+for num in range (1, 11):
+  print(num)
+
+
+
+
+
+for num in range(0,50):
+  num = (num* 2) + 1
+  print(num)
 
 
 
