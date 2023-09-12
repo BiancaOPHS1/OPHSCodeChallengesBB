@@ -20,3 +20,33 @@ while total <= 50:
 
 
 
+variable = int(input("enter a number:"))
+
+total = variable
+value = "y"
+
+while value == "y":
+  another_num = int(input("enter another number?"))
+  total_1 = total + another_num
+  print(total_1)
+  anvalue = str(input("do you want to enter another number? Enter y or n"))
+
+
+
+
+
+
+p_p = "y"
+count = 0 
+
+while p_p == "y":
+  party_ppl = str(input("enter the name of someone you want to invite to a party"))
+  print(party_ppl, "has now been invited")
+  count = count +1
+  p_p = str(input("do you want to invite someone else? (y/n)"))
+  print(count)
+
+
+
+
+
