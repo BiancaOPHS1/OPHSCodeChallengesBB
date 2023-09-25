@@ -1,0 +1,47 @@
+list = ["monday","tuesday","wednesday","thursday","friday"]
+print(list)
+
+
+
+
+
+
+animal = "cat"
+colour = "purple"
+
+print("have you ever seen a", colour , animal,  "?")
+
+
+
+
+
+
+number = 64
+adjective = "sneaky"
+animal = "elephants"
+
+print("what?", number, adjective, animal, "just ran past me!")
+
+
+
+
+
+colour = str(input("what is you favourite colour?"))
+food = str(input("what is your favourite food?"))
+print("yum! I'll have",colour, food, "for dinner tonight!")
+
+
+
+
+
+trivia_q = str(input("what is the capital city of Botswana?"))
+print("correct answer: Gaborone.    Your answer:",trivia_q)
+
+
+
+
+
+school_tran = str(input("what mode of transport do you use to get to school?"))
+school_t = int(input("how many minutes does it take you?"))
+print("really? it takes you",school_t, "minutes to get there by",school_tran, "?")
+
