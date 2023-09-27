@@ -1,0 +1,56 @@
+#hello world program 
+
+#-------------------
+#subprograms
+#-------------------
+
+def output():
+  print("hello world")
+  
+#-------------------
+#main program
+#-------------------
+
+output()
+
+
+
+
+
+#Hello World Program 
+
+#-------------------
+#subprogram
+#-------------------
+def output():
+    print("hello world")
+    print("Tis is my first program")
+    
+
+
+#=------------------
+#main program
+#-------------------
+
+output()
+
+
+
+
+
+#CARPET COST PROGRAM
+
+#-------------------
+#subprograms
+#-------------------
+
+def carpet_cost(length, width, price):
+    carpet = width * length * price
+    grippers = width + length
+    fitting = 50
+    return carpet + grippers + fitting
+
+
+#--------------------
+#main pogram
+#--------------------
