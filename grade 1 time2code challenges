@@ -54,3 +54,49 @@ def carpet_cost(length, width, price):
 #--------------------
 #main pogram
 #--------------------
+
+
+
+
+
+
+#-----------------
+#main program
+#amount of balls need to fill a ball pit
+#-----------------
+
+
+pi = 3.14
+
+ball_pit_radius = int(input("enter the radius of the ball pit:"))
+ball_pit_height = int(input("enter the height of ball pit height:"))
+ball_radius = float(input("Enter the radius of the ball"))
+calculation = pi *(ball_pit_radius * ball_pit_radius) * ball_pit_height
+balls_volume = 4 * pi * (ball_radius * ball_radius)
+total = calculation/ balls_volume
+print(total)
+
+
+
+
+#-------------
+#subprogram showing the face of a dice
+#subprogram called output 5
+#-------------
+
+#-------------
+#main prgram
+#--------------
+
+print("ooooooooooo")
+print("o         o")
+print("o  #   #  o")
+print("o    #    o")
+print("o  #   #  o")
+print("o         o")
+print("ooooooooooo")
+
+
+
+
+
