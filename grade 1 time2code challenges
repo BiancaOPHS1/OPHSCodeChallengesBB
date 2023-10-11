@@ -17,6 +17,11 @@ output()
 
 
 
+
+
+
+
+
 #Hello World Program 
 
 #-------------------
@@ -33,6 +38,11 @@ def output():
 #-------------------
 
 output()
+
+
+
+
+
 
 
 
@@ -60,6 +70,11 @@ def carpet_cost(length, width, price):
 
 
 
+
+
+
+
+
 #-----------------
 #main program
 #amount of balls need to fill a ball pit
@@ -75,6 +90,11 @@ calculation = pi *(ball_pit_radius * ball_pit_radius) * ball_pit_height
 balls_volume = 4 * pi * (ball_radius * ball_radius)
 total = calculation/ balls_volume
 print(total)
+
+
+
+
+
 
 
 
@@ -96,6 +116,63 @@ print("o  #   #  o")
 print("o         o")
 print("ooooooooooo")
 
+
+
+
+
+
+
+
+
+#----------------
+#subprogram
+#converts centigrade to fahrenheit
+#----------------
+
+def c_to_f():
+   fahrenheit = (centigrade * 1.8) + 32
+   return fahrenheit
+  
+#----------------
+#main program
+#----------------
+
+centigrade = int(input("enter centigrade to nearest whole number:"))
+print("the temperature in fahrenheit is " , c_to_f () )
+
+
+
+
+
+
+
+
+
+
+# Fish tank volume problem
+
+# -------------------------
+# Subprograms
+# -------------------------
+def volume(length, width, height):
+  water_vol = (length * width * height)/1000
+  
+
+def litres_to_gallons(litres):
+  gallons = liters/4.546
+
+
+# -------------------------
+# Main program
+# -------------------------
+length = int(input("enter length to the nearest whole number"))
+width = int(input("enter width to the nearest whole number"))
+height = int(input("enter height to the nearest whole number"))
+litres =  int(input("enter liters to the nearest whole number"))
+gallons = int(input("enter gallons to the nearest whole number"))
+
+
+print("A", length, "x", width, "x", height, "cm tank is", litres, "litres and", gallons, "imperial gallons.")
 
 
 
