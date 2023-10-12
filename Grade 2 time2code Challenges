@@ -1,0 +1,83 @@
+#-------------------
+#the height needed for a child to go on the ride
+#--------------------
+
+
+#-----------------
+#program
+#-----------------
+
+height_4_ride = float(input("enter your height in centimeters"))
+
+if height_4_ride > 91:
+  print("Sorry, you are too tall for this ride")
+else:
+  print("height OK")
+
+
+
+
+
+
+
+
+
+
+
+
+#-------------------
+#program that output the largest number
+#-------------------
+
+def largest(number1, number2 , number3):
+  if(number1 == number2) and (number1 == number3):
+    return number1
+  elif(number1 > number2)and (number1 > number3):
+    return number1 
+  elif (number2> number1) and (number2 > number3):
+    return number2
+  else:
+    return number3
+    
+
+
+#-------------------
+#main program
+#-------------------
+
+number1  = int(input("enter the first number"))
+number2 = int(input("Enter a second number"))
+number3 = int(input("Enter a third number"))
+print("the largest number is", largest(number1 , number2 , number3))
+
+
+
+
+
+
+
+
+
+
+def season(spring, summer, autumn, winter):
+  spring = 3 and 4 and 5
+  summer = 6 and 7 and 8
+  autumn = 9 and 10 and 11
+  winter = 1 and 2 and 12
+  
+  if season == 3 and 4 and 5:
+    return spring
+  elif season == 6 and 7 and 8:
+    return summer
+  elif season == 9 and 10 and 11:
+    return autumn
+  else:
+    return winter 
+  
+#-------------------
+#main program
+#------------------
+
+season = int(input("enter a number from 1 to 12 (each meaning the months of the year):"))
+print("the season is ", season(spring, summer, autumn, winter))
+  
