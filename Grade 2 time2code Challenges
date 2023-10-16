@@ -80,4 +80,65 @@ def season(spring, summer, autumn, winter):
 
 season = int(input("enter a number from 1 to 12 (each meaning the months of the year):"))
 print("the season is ", season(spring, summer, autumn, winter))
-  
+
+
+
+
+
+
+
+
+
+
+#program calculating the magnification of a microscope
+
+#-----------------------
+#subprogram
+#------------------------
+
+def magnification(actual_size, image_size):
+  magnification = (image_size * 10000)/actual_size
+  return magnification
+
+
+#----------------------
+#main program
+#----------------------
+
+actual_size = int(input("Enter the actual size in micrometers"))
+image_size = int(input("enter the image size in centimeters:"))
+
+
+print(magnification(actual_size, image_size))
+
+
+
+
+
+
+
+
+
+# Energy bill calculator program
+
+# -------------------------
+# Subprograms
+# -------------------------
+
+def energy_cost(previous_meter_reading, current_meter_reading, calorific_value):
+  units_used = (current_meter_reading - previous_meter_reading)
+  kilowatt_h = units_used * 1.022 * (calorific_value / 3.6)
+  cost = 0.0284 * kilowatt_h
+  return cost 
+
+
+# -------------------------
+# Main program
+# -------------------------
+
+
+previous_meter_reading = int(input("enter the previous meter reading as a four digit integer:"))
+current_meter_reading = int(input("enter the current meter reading as a four digit integer "))
+calorific_value = 39.3
+
+print("£" , energy_cost(previous_meter_reading, current_meter_reading, calorific_value))
