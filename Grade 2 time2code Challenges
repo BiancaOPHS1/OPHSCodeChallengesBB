@@ -142,3 +142,34 @@ current_meter_reading = int(input("enter the current meter reading as a four dig
 calorific_value = 39.3
 
 print("£" , energy_cost(previous_meter_reading, current_meter_reading, calorific_value))
+
+
+
+
+
+
+
+
+
+
+
+
+#------------------------
+# state of water program 
+# tells you the state of the water depending the temperature
+#------------------------
+#subprogram
+#------------------------
+
+def state_water(solid,liquid ,gas):
+  solid < 0 
+  liquid > 0 and liquid <100
+  gas > 100
+  return 
+
+#----------------------
+#main program 
+#----------------------
+
+temp = float(input("enter the temperature of the water in celcius (without the symbol):"))
+print(state_water(solid,liquid ,gas))
