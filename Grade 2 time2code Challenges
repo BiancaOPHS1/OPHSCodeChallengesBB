@@ -241,7 +241,76 @@ print("The temperature in", o_convention, "is", result, "degree")
 
 
 
+#http_status 
+#-----------------------
+#subprogram
+#---------------------------
 
+
+def http_status(status):
+  match status:
+    #400 error
+    case 400:
+      return "bad request"
+    #401 and 403 errors
+    case 401| 403:
+      return "authentication error"
+    #404 error 
+    case 404:
+      return "not found" 
+    #all other errors
+    case _:
+      return "unknown error"
+      
+#-----------------------
+#main program
+#-------------------------
+
+
+code = int(input("enter a http status code (and we will give you the defenition):"))
+print(http_status(code))
+    
+
+
+
+
+
+
+
+
+
+# Currency converter program
+
+# -------------------------
+# Subprograms
+# -------------------------
+
+
+def exchange(gbp, currency):
+  #united states dollars
+  if currency == "US dollars":
+    money  = gbp * 1.3
+  #european euro
+  elif currency == "euro":
+    money = gbp * 1.11
+  #chinese yuan
+  elif currency == "yuan ":
+    money = gbp * 8.92
+  #japanese yen
+  else:
+    money = gbp * 138.44
+  return(money)
+
+
+#-------------------------
+#main program 
+#-------------------------
+
+gbp = float(input("enter the amount of Great british pound you want to convert:"))
+currency = str(input("enter the currency you want to convert it to (US dollars, euro, yuan and yen):"))
+
+print(exchange(gbp, currency))
+  
 
 
 
@@ -285,6 +354,15 @@ else:
     print("Input proper convention.")
     quit()
 print("The temperature in", o_convention, "is", result, "degree")
+
+
+
+
+
+
+
+
+
 
 
 
