@@ -1,0 +1,50 @@
+#Capital city program 
+#-------------------------
+#subprogram
+#------------------------
+
+
+#check if the answer is correct
+def check_answer(country, city):
+  #capital city of england
+  if country == "england" and city == "london":
+    return True
+  #capital city of france 
+  elif country == "france"and city == "paris":
+    return True
+  #capital city of spain
+  elif country == "spain" and city == "madrid":
+    return True
+  else:
+    return False
+    
+    
+#quiz
+def capital_cities():
+  correct = False
+  #ask for the first capital city until correct
+  while not correct:
+    city = str(input("what is the capital city of england? "))
+    correct = check_answer("england", city)
+    
+    
+  correct = False
+  #ask for the second capital city until correct
+  while not correct:
+    city = str(input("what is the capital city of france? "))
+    correct = check_answer("france", city)
+    
+  correct = False
+  #ask for the third capital city until correct
+  while not correct:
+    city = str(input("what is the capital city of spain? "))
+    correct = check_answer("spain", city)  
+
+
+
+#-----------------------
+#main program
+#--------------------------
+
+capital_cities()
+print("the quiz has been completed.")
