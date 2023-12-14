@@ -1,0 +1,157 @@
+# Countdown to launch program
+
+# -------------------------
+# Import libraries
+# -------------------------
+import time
+
+
+# -------------------------
+# Subprograms
+# -------------------------
+def countdown():
+    print("T minus...")
+    for counter in range(12, 8, -1):
+        print (counter, "...")
+        time.sleep(1)
+    print("ignition start sequence start")
+    for counter in range(8,0 , -1):
+        print (counter, "...")
+        time.sleep(1)
+    print("0 ...")
+    print("All engines running.")
+    print("Lift off, we have a lift off on Artemis 1.")
+    time.sleep(1)
+    print("Tower clear.")
+    
+    
+# -------------------------
+# Main program
+# -------------------------
+countdown()
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Rainfall program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def analyse1(data):
+    sum = 0
+    maxi = 0
+    count = 0
+    for value in data:
+        sum += value
+        maxi = max(maxi, value)
+        if value == 0:
+            count = count + 1
+    average = sum/ len(data )      
+    return count, average , maxi
+
+
+def analyse2(data):
+    count = 0
+    for index in range(len(data)):
+        if data[index] == 0:
+            count = count + 1
+       
+    return count
+
+
+# -------------------------
+# Main program
+# -------------------------
+daily_rainfall_mm = [0.1, 0.0, 0.2, 0.4, 0.1, 0.0, 0.0,
+                     0.0, 0.3, 0.3, 0.2, 0.0, 0.0, 0.1]
+
+no_rain_days , average_rain , maxi_rain = analyse1(daily_rainfall_mm)
+print("Days with no rain:", no_rain_days)
+print (average_rain)
+print("Average rain: {0:.2f} ".format(average_rain))
+print("maximum rain"),maxi_rain
+
+
+
+
+
+
+
+
+
+
+# Notebook program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def get_note_number():
+    valid_input = False
+    while not valid_input:
+        note_number = int(input("Note number: "))
+        if note_number >= 0 and note_number < 10:
+            valid_input = True
+        else:
+            print("Invalid input. Enter 0-9.")
+    return note_number
+
+
+def add_note():
+    index = get_note_number()
+    note = input("Enter the note: ")
+    notebook[index] = note
+
+
+def clear_notes():
+    choice = ""
+    while choice not in ["y", "n"]:
+        choice = input("Are you sure you want to delete all notes? y/n :")
+    if choice == "y":
+        for index in range(len(notebook)):
+            notebook[index] = ""
+
+
+def order_notes():
+    notebook.sort()
+
+
+def show_notebook():
+    for index in range(len(notebook)):
+        print(index, ":", notebook[index])
+        
+        
+def delete_notes():
+  index = get_note_number()
+  notebook[index] = ""
+  
+    
+  print("the note has been deleted")
+
+def menu():
+    print()
+    print("a. Add note")
+    print("c. Clear notebook")
+    print("o. Order notes")
+    print("d. Delete note")
+    choice = input(":")
+    
+    match choice:
+        case "a":
+            add_note()
+        case "c":
+            clear_notes()
+        case "o":
+            order_notes()
+        case "d":
+            delete_notes()
+        
