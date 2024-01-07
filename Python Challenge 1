@@ -170,3 +170,22 @@ for num in range(0,50):
 
 
 
+
+
+times_table = int(input("enter a number from 1-12"))
+
+for number in range(0,15):
+  result = number * times_table
+  print(result)
+ 
+  
+
+
+
+
+while True:
+  times_table = int(input("enter a number from 1-12"))
+  for number in range(0,15):
+    result = number * times_table
+    print(result)
+  
