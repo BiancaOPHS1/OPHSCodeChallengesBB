@@ -1,0 +1,110 @@
+num_1 = int(input("enter a number:"))
+num_2 = int(input("enter a number:"))
+num_3 = int(input("enter a number:"))
+
+total = num_1 + num_2
+answer = total * num_3
+print("the answer is" , answer )
+
+
+
+
+
+
+
+
+
+
+
+num_1 = int(input("enter a number:"))
+num_2 = int(input("enter a number:"))
+
+if num_1 > num_2:
+  print(num_1)
+  print(num_2)
+else:
+  print(num_2)
+  print(num_1)
+
+
+
+
+
+
+
+
+
+
+num_1 = int(input("enter a number that is smaller than 20:"))
+
+if num_1 >= 20:
+  print("too high, try again")
+else:
+  print("well done!")
+
+
+
+
+
+
+
+
+name = str(input("enter your name:")) 
+age = int(input("enter your age:"))
+
+new_age = 1 + age
+print( name , "next birthday you will be" , new_age )
+
+
+
+
+
+
+
+
+total_price = float(input("what is the total price of the bill (without £) "))
+no_people = int(input("How many people are there?"))
+
+pay_per_person = total_price / no_people
+print("£" ,pay_per_person , "is how much each person must pay.")
+
+
+
+
+
+
+
+fav_colour =  str(input("enter your favourite colour:"))
+
+if fav_colour == "red" or fav_colour == "RED" or fav_colour == "Red":
+  print("I like red too")
+else:
+  print("I don't like",fav_colour,"I prefer red.")
+
+
+
+
+
+
+
+
+
+
+number = int(input("enter the number 1 , 2 or 3:"))
+
+if number == 1:
+  print("thank you")
+elif number == 2:
+  print("well done!")
+elif number == 3:
+  print("correct")
+else:
+  print("error message")
+
+
+
+
+
+
+
+
