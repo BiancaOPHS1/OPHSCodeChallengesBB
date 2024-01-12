@@ -107,4 +107,24 @@ else:
 
 
 
+first_name = str(input("enter your first name:"))
+
+if len(first_name) < 5:
+  surname = str(input("enter your surname"))
+  name = first_name + surname
+  print(name.upper())
+else:
+  print(first_name.lower())
+
+
+
+
+
+
+
+
+
+
+
+
 
