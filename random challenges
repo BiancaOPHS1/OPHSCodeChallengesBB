@@ -124,6 +124,11 @@ else:
 
 
 
+mins = int(input("enter the number of minutes you wish to convert"))
+hour = (mins)/60  
+minutes = int(mins) % 60 
+print("this is",int(hour), "h" ,minutes,"mins")
+
 
 
 
