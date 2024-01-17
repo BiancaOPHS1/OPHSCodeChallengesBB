@@ -1,0 +1,27 @@
+file = open("quick.txt", "a")
+file.write("dragonshark")
+file.close()
+
+
+
+
+file = open("numbers.txt" , "r")
+numbers_text = file.read()
+print(numbers_text)
+
+  
+
+
+
+name1 = str(input("enter a name:"))
+name2 = str(input("enter a name:"))
+name3 = str(input("enter a name:"))
+name4 = str(input("enter a name:"))
+
+player_names = [name1, name2 ,name3, name4]
+
+
+file = open("players.txt" , "w")
+file.write(str(player_names))
+file.close()
+
