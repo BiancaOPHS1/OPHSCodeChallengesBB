@@ -45,3 +45,86 @@ school_tran = str(input("what mode of transport do you use to get to school?"))
 school_t = int(input("how many minutes does it take you?"))
 print("really? it takes you",school_t, "minutes to get there by",school_tran, "?")
 
+
+
+
+
+
+name = str(input("write your name:"))
+fav_colour = str(input("what's your favourite colour?"))
+fav_movie = str(input("what is your favourite movie"))
+
+print("my name is", name, ", my favorite colour is", fav_colour, "and my favourite movie is",fav_movie)
+
+
+
+
+
+
+
+#this program will print the days of the week 
+
+day_week = "thursday"
+print(day_week)
+
+#the weather was horrible today
+#it was very cold 
+
+
+
+
+
+
+
+superhero = "spider-man"
+print(superhero)
+colour = "red and blue"
+print(colour)
+
+
+
+
+
+
+movie_name = "avenger's end game"
+actor = "tom holland"
+year = 2021
+print("did you know", movie_name, "has the spiderman played by", actor, "in" ,year)
+
+
+
+
+number = 43
+adjective = "spiky "
+animal = "fish"
+
+print("What?", number, adjective, animal, "just ran past me")
+
+
+
+
+
+holiday = str(input("where did you last go on holiday"))
+print("i hope you had a nice time in",holiday)
+
+
+
+
+
+
+
+title = str(input("enter your title >>> Mr, miss, Mrs"))
+object = str(input("enter an object"))
+print("my new neighbour is called",title, object)
+
+
+
+
+
+name = str(input("eneter your name:"))
+fav_game = str(input("what is your favourite game?"))
+print("i like",fav_game,"too,", name)
+
+
+
+
