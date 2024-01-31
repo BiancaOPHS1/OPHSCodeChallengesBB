@@ -170,6 +170,10 @@ print(days[day-1])
 
 
 
+scores = [["fred","Wilma", "Dino"]],[4,5,6]
+
+print(scores[0])
+
 
 
 
