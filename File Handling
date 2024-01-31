@@ -25,3 +25,14 @@ file = open("players.txt" , "w")
 file.write(str(player_names))
 file.close()
 
+
+
+
+
+
+
+file = open("shopping.txt", "a")
+
+file.write("bread")
+
+file.close()
