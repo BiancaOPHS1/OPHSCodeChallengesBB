@@ -133,3 +133,46 @@ print("this is",int(hour), "h" ,minutes,"mins")
 
 
 
+
+
+days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+print(days)
+print(days[0])
+
+
+
+
+
+
+
+
+
+days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+
+day = 3
+print(days[day])
+
+
+
+
+
+
+
+days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+
+day = 3
+print(days[day-1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
