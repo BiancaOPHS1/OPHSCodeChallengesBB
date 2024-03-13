@@ -188,4 +188,76 @@ while True:
   for number in range(0,15):
     result = number * times_table
     print(result)
-  
+
+
+
+
+
+
+
+
+
+number = int(input("enter a number from 1 to 12:"))
+
+constant = 0
+while constant != 13:
+    times_table = number * constant
+    print(constant ,"*",number, "=" ,times_table)
+    constant = constant + 1
+
+
+
+
+
+
+
+
+number = int(input("enter a number:"))
+
+
+while number != 7:
+  number = int(input("enter a number:"))
+  if number == 7:
+    print("well done")
+
+
+
+
+
+
+
+number = int(input("enter a integar number"))
+conversion = input("convert to inches (from cm) or convert to cm (from inches)>>> type either inches or cm")
+
+if conversion == "inches":
+  constant = 0.3937
+  total = constant * number
+  print(total)
+elif conversion == "cm":
+  constant2 = 2.54
+  total2 = constant2 * number
+  print(total2)
+else:
+  print("please choose on of the conversions")
+
+
+
+
+
+
+
+
+distance = float(input("enter the distance in meters"))
+time = int(input("enter the time in seconds"))
+
+average_speed = distance/ time
+print(round(average_speed , 2))
+
+
+
+
+
+
+
+
+
