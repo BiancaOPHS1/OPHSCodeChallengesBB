@@ -261,3 +261,26 @@ print(round(average_speed , 2))
 
 
 
+
+
+
+file = open("schoolclub","a")
+
+first = input("enter your first name")
+last = input("enter your last name")
+gender = input("enter female or male")
+form= input("enter the form")
+
+file.write("\nFirst name: "+first+", Last name: "+last+", Gender: "+gender+", Form: "+form)
+file.close()
+
+
+
+
+
+
+
+
+
+
+
