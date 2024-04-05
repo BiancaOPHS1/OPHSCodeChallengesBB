@@ -1,0 +1,30 @@
+import random
+player1score = 0
+player2score = 0
+
+
+scoref = open("scores.txt", "a") #this file keeps the scores of the dice game
+#the player names entered
+player1 = input("what is name of player 1?")
+player2 = input("what is name of player 2?")
+scoref.write(player1 +  "score:" + player1score + "\n")
+scoref.write(player2 + "score:" + player2score + "\n")
+
+
+for rounds in range(1,6):
+  print("round", round)
+  player1score = player1score + rounds(player1)
+  player2score = player2score + rounds(player2)
+  
+  
+def roll():
+  dice = [0,0]
+  dice[0] = random.randint(1,6)
+  dice[1] = random.randint(1,6)
+  return dice
+  
+def points(dice):
+  if dice[0] + dice[1] == (%2 = 0):
+    return + 2
+  else:
+    return -2
