@@ -28,3 +28,72 @@ def points(dice):
     return + 2
   else:
     return -2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import random
+
+  
+  
+playersfilename = ("players.txt")
+players = getplayers()
+playeruser1 = input("enter name of player 1")
+playeruser2 = input("enter name of player 2")
+  
+
+def playround(playerUser):
+  print(playerUser + "press any key to roll your dice")
+  input()
+  first_roll = random.randint(1,6)
+  second_roll = random.randint(1,6)
+  #random number is generated form 1 to 6
+  totalroll = first_roll + second_roll
+  #this function finds total of the 2 dice rolls
+  print("you rolled",first_roll, "and", second_roll, "so you dice total is" , totalroll)
+  
+  
+  if totalroll %2 == 0:
+    print("you rolled even total, so have 10 more points")
+    totalroll = totalroll + 10
+    # an even total of dice rolls means player gets 10 points more
+    
+    if first_roll == second_roll:
+      print("both dice rolls were the same so you get an extra dice roll")
+      input("press any key to roll your die")
+      third_roll = random.randint(1,6)
+      totalroll = totalroll + third_roll
+      
+  else:
+    print("you rolled an odd total so you lose 5 point")
+    totalroll = totalroll - 5
+  
+  print("your total for this round is," , totalroll)    
+  input("press any key to continue")
+  return totalroll
+  
+def getplayers():
+  players = []
+  playersfilename = open("players.txt","a")
+  player = 0
+  while not playersfilename.close():
+    players[player] = playersfilename.read
+    player = player + 1
+  return players
+  
+    
