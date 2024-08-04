@@ -1,0 +1,135 @@
+
+
+#PYTHON SYNTAX
+
+if 16 >= 12:
+ print("16 is greater than 12") 
+
+
+
+
+
+#PYTHON COMMENTS
+
+print("my name is Bianca") #this prints Bianca 
+
+
+
+ #this is 
+#called a
+#multiline comment 
+print("a multiline comment expands across diff lines")
+
+
+
+"""
+comments can also look 
+like this 
+because python ignores
+string literals without variables
+"""
+print("dont forget strings can also be comments") 
+
+
+
+
+#PYTHON VARIABLES 
+
+a = "Bianca"
+b = 17 
+print(a, "is going to be", b) 
+
+
+
+a = 0
+a = "star" 
+print(a)
+
+
+
+a = str(34)
+b= int(34)
+c = float(34) 
+
+print(a , b , c)
+
+
+
+a=9.65476
+b="patricia"
+c=3
+
+print(type(a)) #type() shows you the data type of the variable 
+print(type(b))
+print(type(c))
+
+
+
+
+myname = "bianca"
+myName = "bianca"
+my_name = "bianca"
+my1name = "bianca"
+myname1 = "bianca"
+
+
+print(myname)
+print(myName)
+print(my_name)
+print(my1name)
+print(myname1)
+
+
+
+
+myVariableName = "patricia" #camel case has each beginning letter as capital except first 
+MyVariableName = "bianca" #pascal case has each word beginning with capital 
+my_variable_name = "bahnovei" #snake case has each word separated by underscore character 
+
+
+
+
+a,b,c = "newton", "kepler", "Einstein"
+
+print(a)
+print(b) 
+print(c)
+
+
+
+
+sports= ["tennis", "running", "rock climbing", "weightlifting"]
+a,b,c,d = sports
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+
+
+x = "I like" 
+
+def myfunc():
+  x = "I love" 
+  print(x, "python") 
+  
+myfunc() #this calls the function you have made 
+  
+print(x, "python") 
+
+
+
+
+def myfunc():
+   global b 
+   b = "great" 
+   
+myfunc()
+ 
+print("bianca is", b) 
+
+
+
+
+#PYTHON DATATYPES 
