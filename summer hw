@@ -6,7 +6,7 @@ if 16 >= 12:
  print("16 is greater than 12") 
 
 
-
+#-------------------------------------------------------
 
 
 #PYTHON COMMENTS
@@ -31,7 +31,7 @@ string literals without variables
 print("dont forget strings can also be comments") 
 
 
-
+#----------------------------------------------------------
 
 #PYTHON VARIABLES 
 
@@ -39,13 +39,13 @@ a = "Bianca"
 b = 17 
 print(a, "is going to be", b) 
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 a = 0
 a = "star" 
 print(a)
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 a = str(34)
 b= int(34)
@@ -53,7 +53,7 @@ c = float(34)
 
 print(a , b , c)
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 a=9.65476
 b="patricia"
@@ -64,7 +64,7 @@ print(type(b))
 print(type(c))
 
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 myname = "bianca"
 myName = "bianca"
@@ -80,13 +80,13 @@ print(my1name)
 print(myname1)
 
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 myVariableName = "patricia" #camel case has each beginning letter as capital except first 
 MyVariableName = "bianca" #pascal case has each word beginning with capital 
 my_variable_name = "bahnovei" #snake case has each word separated by underscore character 
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 a,b,c = "newton", "kepler", "Einstein"
@@ -96,7 +96,7 @@ print(b)
 print(c)
 
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 sports= ["tennis", "running", "rock climbing", "weightlifting"]
 a,b,c,d = sports
@@ -106,7 +106,7 @@ print(c)
 print(d)
 
 
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 x = "I like" 
 
@@ -119,8 +119,7 @@ myfunc() #this calls the function you have made
 print(x, "python") 
 
 
-
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def myfunc():
    global b 
    b = "great" 
@@ -129,7 +128,166 @@ myfunc()
  
 print("bianca is", b) 
 
-
+#-------------------------------------------------------
 
 
 #PYTHON DATATYPES 
+
+
+x = ["rowing", "weightlifting", "high jump"] #this is called a list 
+
+print(type(x))
+
+x = range(1,6) #this is a range 
+
+print(type(x)) 
+
+
+y = ("strawberry", "coconut", "mango") #this is called a tuple
+
+print(type(y))
+#lists, range and tuple are all part of the sequence data types 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a = 45   #this is an integar
+b = 3.1415926535   #this is a real/float
+c = "Bia" #this is a string
+d = True  #this is boolean 
+
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+
+x = 1j  #this is called complex 
+print(type(x)) 
+
+#string is text data type
+#while integar, float and complex is numerical
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+x = b"bye" #this is called a byte
+print(type(x)) 
+
+
+x = bytearray(2) #this is a bytearray
+print(type(x)) 
+
+
+x = memoryview(bytes(1))  #this is called memoryview
+print(type(x)) 
+
+#the byte,memoryview and bytearray are all binary data type 
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+x = {"apple", "banana", "cherry"} #this is a set 
+print(type(x)) 
+
+x = frozenset({"apple", "banana", "cherry"}) # this is frozenset 
+print(type(x)) 
+
+#frrozen set and set are part of the set data types 
+
+
+#-------------------------------------------------------------
+
+#PYTHON NUMBERS 
+
+
+a = 0          #int are any whole numbers 
+b = -3489      #including negatives 
+c = 6597659    #and positives 
+
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+x = 1.10               #float are any numbers 
+y = 2346.909909090     #with decimals 
+z = -35e3              #e is used to indicate to power of 10
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+x = 3+5j  #j is the imaginary part 
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+y = 23
+z = 7.6
+
+a = float(y) #converts int to float 
+print(a)
+b = int(z) # converts float to int 
+print(b) #floats are always truncated to one dp
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import random
+
+print(random.randrange(1, 10)) #print a randon number from 1 to 10 
+
+#-----------------------------------------------------------------
+
+#PYTHON CASTING 
+#casting is converting one data type to another 
+
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+
+print(x)
+print(y)
+print(z)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a = "Hello, World!"
+print(a[1])  #returns e because the first character is always position 0 
+
+b = "Hello, World!"
+print(b[2:5])  #returns llo as the fifth posithio is not included 
+
+b = "Hello, World!"
+print(b[:6])  #returns all until position 6 
+
+b = "Hello, World!"
+print(b[4:])   #returna all past position 4 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+txt = "The best things in life are free!"
+print("free" in txt)  #returns true if free is in txt or false if it isnt 
+
+txt = "The best things in life are free!"
+print("expensive" not in txt) #returns true if expensive is not in txt or false if it is
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a = "Bianca"
+print(a.upper()) #makes it in upper case
+
+a = "Bianca"
+print(a.lower())  #makes it all in lower case 
+
+x = "  Bianca is the best  " 
+print(x.strip())  #stirp removes white space at the beginning or end
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
