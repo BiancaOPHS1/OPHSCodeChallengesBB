@@ -1,5 +1,6 @@
 
 
+
 #PYTHON SYNTAX
 
 if 16 >= 12:
@@ -290,4 +291,60 @@ x = "  Bianca is the best  "
 print(x.strip())  #stirp removes white space at the beginning or end
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+x = "Bianca" 
+y = "patricia" 
+z = x + y 
+print("my name is" , z) #this is concatination 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+age = 17
+txt = f"My name is Bianca, I am {age}" #the f is a formatting string 
+print(txt) 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+txt = "my\nname \nis \nbianca!" #the \n makes the words go on a separate new line 
+print(txt) 
+
+#----------------------------------------------------------------
+
+#PYTHON BOOLEAN
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"]) 
+
+#any string is T, except empty strings
+#any number is T but 0 
+
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+#----------------------------------------------------------------
+
+#PYTHON OPERATORS 
+
+print(1 + 2) # + is addition
+print(2 - 1) # - is subtraction
+print(2 *3) # * is multiplication
+print( 6/3) # / is division
+print(10 %3) # % is mod, gives the remainder when a number is divided by another
+print(10 //3) # // is div, give largeest whole number when one is divided by another
+print( 2 ** 3) # ** is exponent
+
+#-----------------------------------------------------------------
+
+#PYTHON LISTS 
+
+
+
+
+#----------------------------------------------------------------
 
