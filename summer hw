@@ -343,8 +343,81 @@ print( 2 ** 3) # ** is exponent
 
 #PYTHON LISTS 
 
+f1drivers = ["lando", "charles","carlos", "hamilton","max", "piastri", "yuki"]
+print(f1drivers)
+print(f1drivers[-1]) #-1 refers to the last item 
+print(f1drivers[1:3]) #returns first and second item 
+print(f1driver[1:]) #returns all items from the first (unincluding) util the end
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+f1drivers = ["lando", "charles","carlos", "hamilton","max", "piastri", "yuki"]
+f1drivers[0] = "alonso"
+print(f1drivers) 
+#insert adds more items to the list 
+f1drivers.insert(7,"seargent") #7 is the position seargent witll be placed in 
+print(f1drivers)
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)   #the extend joins the 2 lists together
+print(thislist)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+f1drivers = ["lando", "charles","carlos", "hamilton","max", "piastri", "yuki"]
+newlist=[]
+
+for x in f1drivers:
+  if "i" in x:
+     newlist.append(x)
+
+print(newlist) 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)  #solves it in alphabetical order 
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist) #solves it from lowest to highest
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()  #this copies the list 
+print(mylist)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#List items are ordered, changeable, and allow duplicate values
+#List items are indexed, the first item has index [0]
+#lists can contain different data types
+#Tuple is a collection which is ordered and unchangeable, allows duplicate members
+#Set is a collection which is unordered, unchangeable*, and unindexed, no duplicate members
+#Dictionary is a collection which is ordered** and changeable; no duplicate members
 
 #----------------------------------------------------------------
+
+#PYTHON IF ... ELSE
+
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+#-----------------------------------------------------------------
 
